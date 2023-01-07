@@ -10,17 +10,22 @@
 
     <script>
 
-        for(x=1;x<=10;x++)
+        var x;
+        function test(y)
         {
-            document.write("23 * ");
-            document.write(x);        //1 2...10
-            document.write(" = ");
-            document.write(23*x);
+            x=y; //x = y= 34.456
+            document.write(x);
+            document.write("<br>");
 
-            document.write("<br>")
         }
 
- </script>
+        test(12)
+        test(34.456)
+        test('Deep')
+        test(true)
+        test(34)
+
+    </script>
     
 </body>
 </html>
